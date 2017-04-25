@@ -1,6 +1,5 @@
-﻿//I realize there are existing libraries for JSON parsing, but I decided to write my own class for two reasons.
-//1: I might create an Android port of Albedo using Xamarin, and Json.NET's size would push it over the Starter limits.
-//2: It seemed like a good idea at the time.
+﻿// The issues with the app appear to be related to invalid JSON responses being detected by this custom JSON parser written by the author.
+// As the reasons given by the author for using a custom JSON Parser seem moot, I have converted this back to use the Newtonsoft.Json NuGet Package.
 
 using System;
 using System.Collections.Generic;
@@ -9,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Dynamic;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
 
 namespace Albedo.Core
 {

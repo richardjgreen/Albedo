@@ -134,8 +134,8 @@ namespace Albedo
 					string jsonModel = JsonParser.Read(light.Value, new string[] { "modelid" });
 					string friendlyModel = "Unknown light type";
 
-					if (jsonModel.Contains("LCT")) {
-						friendlyModel = "hue";
+                    if (jsonModel.Contains("LCT")) {
+                        friendlyModel = "hue";
 					} else if (jsonModel.Contains("LLC")) {
 						friendlyModel = "LivingColors";
 					} else if (jsonModel.Contains("LWB")) {
